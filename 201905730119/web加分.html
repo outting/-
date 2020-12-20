@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2-09 CSS3动画（Web全栈）</title>
+	<style>
+		body{
+		/*	width: 100%;
+  height: auto;
+  position: relative; 
+  animation: roll 8s infinite linear ; */
+  width: 800px;   
+            height: 800px;;   
+            position: relative;   
+            margin: 0 auto;      
+            padding: 0;   
+            transform: scale(1); 
+}
+ .box{
+      width: 80px;
+   height: 80px;
+   background: #2a385e;
+   border: 20px solid #e6e8ec;
+   border-radius: 50%;
+   left: 45%;
+   top: 35%;
+   position: absolute;
+      font-size: 16px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+   line-height: 50px;
+  
+  }
+
+ .box::after{
+         content:"";
+         width: 200px;
+   height: 200px;
+   border: 3px dashed #3f5b87;
+   border-radius: 50%;
+   left:-79%;
+   top:-77%;
+        position: absolute;
+         animation: rotate 3.9s infinite linear;
+  }
+
+ .box::before{
+         content:"";
+         width: 380px;
+   height: 380px;
+   border: 3px dashed #c6ccce;
+   border-radius: 50%;
+   left:-188%;
+   top:-194%;
+      position: absolute;
+       animation: rotate 3.9s infinite linear;
+  }     
+
+  .box1{  
+   width: 55px;
+   height: 55px;
+   border-radius: 50%;
+   background: #e790ec;
+   border: 10px solid #f8e9fa;
+   position: absolute;
+   right:55%;
+   top: 42%;
+   font-size: 13px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+   line-height:32px;
+   transform-origin: 130px 5px;
+   animation: rotate 50s infinite linear;
+  }
+   .box2{  
+   width: 55px;
+   height: 55px;
+   border-radius: 50%;
+   background: #ff8f92;
+   border: 10px solid #ffebe8;
+   position: absolute;
+   right:55%;
+   top: 42%;
+   font-size: 13px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+   line-height:32px;
+   transform-origin: 130px 5px;
+   animation: rotate 50s infinite linear;
+  }
+   .box3{
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   background: #a2d9ec;
+   border: 9px solid #eef7fa;
+   position: absolute;
+   right:55%;
+   top: 42%;
+   font-size: 13px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+   line-height:32px;
+   transform-origin: 130px 5px;
+   animation: rotate 7s infinite linear;
+  }
+   .box4{
+   width: 45px;
+   height:45px;
+   border-radius: 50%;
+   background: #b9efc9;
+   border: 9px soli  #f3fcf4;
+    position: absolute;
+      right: 56%;
+   top:42%;
+   font-size: 13px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+            line-height:22px;
+ transform-origin: 125px 5px;
+ animation: roll 10s infinite linear ;
+animation: rotate 3.9s infinite linear;
+  }
+   .box5{
+   
+   width:77px;
+   height:77px;
+   border-radius: 50%;
+   background: #7ec6d0;
+   border: 9px solid #e9f4f5;
+   position: absolute;
+      right: 65%;
+   top:40%;
+   font-size: 13px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+            line-height:42px;
+             transform-origin: 250px 20px;
+           /*  animation: roll 8s infinite linear ;*/
+animation: rotate 6s infinite linear;
+  }
+   .box6{
+   
+   width:80px;
+   height:80px;
+   border-radius: 50%;
+   background: #ee398e;
+   border: 9px solid #fdd8e8;
+   position: absolute;
+  right: 65%;
+   top:40%;
+   font-size: 13px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+            line-height:42px;
+             transform-origin: 250px 20px;
+           /*  animation: roll 8s infinite linear ;*/
+animation: rotate 15s infinite linear;
+  }
+   .box7{
+   
+   width:80px;
+   height:80px;
+   border-radius: 50%;
+   background:#ee398e;
+   border: 9px solid #fdd6e8;
+   position: absolute;
+      right:65%;
+   font-size: 13px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+   background:#ff8099;
+   border: 9px solid #fee6ea;
+   position: absolute;
+      right:65%;
+   top: 40%;
+   font-size: 13px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+            line-height:42px;
+             transform-origin: 250px 20px;
+            /* animation: roll 8s infinite linear ;*/
+animation: rotate 12s infinite linear;
+  }
+   .box8{
+   
+   width:75px;
+   height:75px;
+   border-radius: 50%;
+   background:#f2f77b;
+   border: 9px solid #fcfde2;
+   position: absolute;
+      right:65%;
+   top: 40%;
+   font-size: 13px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+            line-height:42px;
+            transform-origin: 250px 20px;
+           /*  animation: roll 8s infinite linear ;*/
+animation: rotate 8s infinite linear;
+  }
+.box9{
+   
+   width:80px;
+   height:80px;
+   border-radius: 50%;
+   background:#6ebdf8;
+   border: 9px solid #e6f3fd;
+   position: absolute;
+      left: 20%;
+   top: 40%;
+   font-size: 13px;
+   font-weight:900;
+   color: white;
+   text-align: center;
+            line-height:42px;
+            animation: roll 8s infinite linear ;
+            transform-origin: 250px 20px;
+animation: rotate 10s infinite linear;
+  }
+  
+  /*@keyframes roll{
+   from{transform:rotate(0deg) ;}
+   to{transform:rotate(360deg);}
+  }*/
+  @keyframes rotate	{
+  100% {
+    transform: rotate(-360deg);
+}
+
+	</style>
+</head>
+<body>
+	<div class="box"><p>Web全栈</p ></div>
+ <div id=span1>
+ <div class="box1"><p>jQuery</p ></div>
+    <div class="box2"><p>node.js</p ></div>
+      <div class="box3"><p>HTML5</p ></div>
+        <div class="box4"><p>CSS3</p ></div>
+          <div class="box5"><p>WebApp</p ></div>
+            <div class="box6"><p>Angular.js</p ></div>
+              <div class="box7"><p>React.js</p ></div>
+                <div class="box8"><p>Canvas</p ></div>
+                 <div class="box9"><p>Zepto.js</p ></div>
+                 </div>
+
+</body>
+</html>
